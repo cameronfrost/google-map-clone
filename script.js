@@ -13,6 +13,9 @@ function setupMap(centerPosition) {
     center: centerPosition,
     zoom: 15,
   });
+
+  const navigationControls = new mapboxgl.NavigationControl();
+  map.addControl(navigationControls);
 }
 
 function successLocation(position) {
